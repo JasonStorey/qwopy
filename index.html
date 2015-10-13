@@ -2,11 +2,13 @@
 <html>
     <head/><head>
     <body>
+        <div id="container"></div>
         <script src="./qrcode.min.js"></script>
-        <div id="qrcode"></div>
         <script src="./dist/qwopy.js"></script> 
         <script>
-            QWOPY.init();
+            QWOPY.init({
+                container: document.getElementById('container')
+            });
         </script>
     </body>
 </html>

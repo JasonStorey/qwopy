@@ -1,8 +1,9 @@
+let dataDisplay = require('./lib/data-display');
+
 module.exports = {
-    init: () => {
-        console.log('qwopy');
-        let someTextToEncode = 'Hey there, buddy.';
-        new QRCode(document.getElementById('qrcode'), someTextToEncode);
+    init: (config) => {
+        console.log('QWOPY');
+        dataDisplay.init(config);
     }
 };
 
