@@ -1,0 +1,25 @@
+{
+  "name": "qwopy",
+  "version": "0.1.0",
+  "description": "Quickly copy data between devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "mkdir -p ./dist && rm -rf ./dist/*",
+    "build": "npm run clean && browserify ./index.js --standalone QWOPY -t babelify -o ./dist/qwopy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonStorey/qwopy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonStorey/qwopy/issues"
+  },
+  "homepage": "https://github.com/JasonStorey/qwopy",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0"
+  }
+}
